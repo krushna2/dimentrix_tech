@@ -11,12 +11,13 @@ function Step3(props) {
             <Label htmlFor="elewenth"> I uderstand why people are being difficult to me ? </Label>
             <Input
               className="form-control slider"
+              step={1}
               min={0} max={10}
               defaultValue={0}
               id="elewenth"
               name="elewenth"
               type="range"
-              value={props.elewenth}
+              value={props.score.elewenth}
               onChange={props.handleChange}
               />
         </FormGroup>
@@ -24,12 +25,13 @@ function Step3(props) {
             <Label htmlFor="twelth"> I uderstand why people are being difficult to me ? </Label>
             <Input
               className="form-control slider"
+              step={1}
               min={0} max={10}
               defaultValue={0}
               id="twelth"
               name="twelth"
               type="range"
-              value={props.twelth}
+              value={props.score.twelth}
               onChange={props.handleChange}
               />
         </FormGroup>

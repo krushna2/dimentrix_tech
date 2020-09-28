@@ -2,10 +2,7 @@ import React from 'react';
 import {FormGroup, Input, Label} from 'reactstrap';
 
 function Step1(props) {
-  const range = [
-    { value: 0, step: 1 }, 
-    { value: 10 } 
-  ]
+
   if (props.currentStep !== 1) {
     return null
   } 
@@ -16,13 +13,12 @@ function Step1(props) {
                   <Input
                     className="form-control slider"
                     step={1}
-                    min={0} max={11}
+                    min={0} max={10}
                     defaultValue={0}
                     id="first"
                     name="first"
-                    range={range} 
                     type="range"
-                    value ={props.first}
+                    value ={props.score.first}
                     onChange={props.handleChange}
                     />
         </FormGroup>
@@ -30,12 +26,13 @@ function Step1(props) {
             <Label htmlFor="second"> I uderstand why people are being difficult to me ? </Label>
             <Input
               className="form-control slider"
+              step={1}
               min={0} max={10}
               defaultValue={0}
               id="second"
               name="second"
               type="range"
-              value={props.second}
+              value={props.score.second}
               onChange={props.handleChange}
               />
         </FormGroup>
@@ -43,12 +40,13 @@ function Step1(props) {
             <Label htmlFor="third"> How often do you manage to meet your deadlines at work ? </Label>
             <Input
               className="form-control slider"
+              step={1}
               min={0} max={10}
               defaultValue={0}
               id="third"
               name="third"
               type="range"
-              value={props.third}
+              value={props.score.third}
               onChange={props.handleChange}
               />
         </FormGroup>
@@ -56,12 +54,13 @@ function Step1(props) {
             <Label htmlFor="fourth"> How often do you manage to meet your deadlines at work ? </Label>
             <Input
               className="form-control slider"
+              step={1}
               min={0} max={10}
               defaultValue={0}
               id="fourth"
               name="fourth"
               type="range"
-              value={props.fourth}
+              value={props.score.fourth}
               onChange={props.handleChange}
               />
         </FormGroup>
@@ -69,12 +68,13 @@ function Step1(props) {
             <Label htmlFor="fifth"> I uderstand why people are being difficult to me ? </Label>
             <Input
               className="form-control slider"
+              step={1}
               min={0} max={10}
               defaultValue={0}
               id="fifth"
               name="fifth"
               type="range"
-              value={props.fifth}
+              value={props.score.fifth}
               onChange={props.handleChange}
               />
         </FormGroup>

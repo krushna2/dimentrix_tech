@@ -4,6 +4,24 @@ Form{
 }
 
 Form .But{
-    width: 20%;
+   
     margin-left: 40%;
+}
+
+Label{
+    
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* .bottum{
+    background-color: whitesmoke;
+} */
+
+input{
+    border: 0!important;
+    box-shadow: none!important; 
+
 }

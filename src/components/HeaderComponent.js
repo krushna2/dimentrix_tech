@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Progress, Navbar} from 'reactstrap';
+import {Progress, Nav} from 'reactstrap';
 
 function Header(props){
 
@@ -18,14 +18,11 @@ function Header(props){
 
     return(
        
-            <div className="fluid-container ">
-            <Navbar dark className="text-light bg-info m-3 p-5">
-                <span>Assessment Progress :{percentage} %</span>  
-                
-                <Progress bar animated color={colour(percentage)} value={percentage} min="0" max="100" ></Progress>
-              
-            </Navbar>
-            
+            <div className="fluid-container mb-4 ">
+                <Nav dark className="text-light bg-info p-4">
+                    <div>Assessment Progress :{percentage} %</div>       
+                    <Progress bar animated color={colour(percentage)} value={percentage} min="0" max="100" />
+                </Nav>
             </div> 
         
     )
