@@ -5,13 +5,11 @@ function Step3(props) {
     if (props.currentStep !== 3) {
         return null
     }
-    return ( <
-        React.Fragment >
-        <
-        FormGroup >
-        <
-        Label htmlFor = "elewenth" > Do you know about programming ? < /Label> <
-        Input className = "form-control slider"
+    return ( 
+      <React.Fragment>
+        <FormGroup >
+        <Label htmlFor = "elewenth" > Do you know about programming ? </Label> 
+        <Input className = "form-control slider"
         step = { 1 }
         min = { 0 }
         max = { 10 }
@@ -21,12 +19,11 @@ function Step3(props) {
         type = "range"
         value = { props.score.elewenth }
         onChange = { props.handleChange }
-        /> < /
-        FormGroup > <
-        FormGroup >
-        <
-        Label htmlFor = "twelth" > Do you know about ReactJs ? < /Label> <
-        Input className = "form-control slider"
+        /> 
+        </FormGroup> 
+        <FormGroup>
+        <Label htmlFor = "twelth" > Do you know about ReactJs ? </Label> 
+        <Input className = "form-control slider"
         step = { 1 }
         min = { 0 }
         max = { 10 }
@@ -36,10 +33,10 @@ function Step3(props) {
         type = "range"
         value = { props.score.twelth }
         onChange = { props.handleChange }
-        /> < /
-        FormGroup > <
-        Button className = "btn But  btn-success" > Finish < /Button> < /
-        React.Fragment >
+        /> 
+        </FormGroup> 
+        <Button className = "btn But  btn-success" > Finish </Button>
+         </React.Fragment>
     );
 }
 
