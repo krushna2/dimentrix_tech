@@ -15,19 +15,25 @@ function Header(props) {
         }
     }
 
-    return (
-
-        <
-        div className = "fluid-container mb-4 " >
+    return ( <
+        div className = "fluid-container mb-4" >
         <
         Nav dark className = "text-light bg-info p-4" >
         <
-        div > Assessment Progress: { percentage } % < /div>        <
-        Progress bar animated color = { colour(percentage) }
+        div className = "container" >
+        <
+        div className = "row" >
+        <
+        div className = "col-4" > Assessment Progress: { percentage } % < /div>  <
+        Progress bar animated className = "col-8"
+        color = { colour(percentage) }
         value = { percentage }
         min = "0"
         max = "100" / >
+
         <
+        /div> < /
+        div > <
         /Nav> < /
         div >
 

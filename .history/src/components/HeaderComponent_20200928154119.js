@@ -23,7 +23,8 @@ function Header(props) {
         Nav dark className = "text-light bg-info p-4" >
         <
         div > Assessment Progress: { percentage } % < /div>        <
-        Progress bar animated color = { colour(percentage) }
+        Progress bar animated className = "col-sm-6"
+        color = { colour(percentage) }
         value = { percentage }
         min = "0"
         max = "100" / >

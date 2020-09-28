@@ -21,11 +21,11 @@ function Step3(props) {
         type = "range"
         value = { props.score.elewenth }
         onChange = { props.handleChange }
-        /> < /
-        FormGroup > <
+        /> <
+        /FormGroup> <
         FormGroup >
         <
-        Label htmlFor = "twelth" > Do you know about ReactJs ? < /Label> <
+        Label htmlFor = "twelth" > I uderstand why people are being difficult to me ? < /Label> <
         Input className = "form-control slider"
         step = { 1 }
         min = { 0 }
@@ -36,10 +36,10 @@ function Step3(props) {
         type = "range"
         value = { props.score.twelth }
         onChange = { props.handleChange }
-        /> < /
-        FormGroup > <
-        Button className = "btn But  btn-success" > Finish < /Button> < /
-        React.Fragment >
+        /> <
+        /FormGroup> <
+        Button className = "btn But  btn-success" > Finish < /Button> <
+        /React.Fragment>
     );
 }
 
