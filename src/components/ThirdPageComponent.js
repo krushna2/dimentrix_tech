@@ -38,7 +38,7 @@ function Step3(props) {
         onChange = { props.handleChange }
         /> < /
         FormGroup > <
-        Button className = "btn But  btn-success" > Finish < /Button> < /
+        Button className = "btn But  btn-success mt-5" > Finish < /Button> < /
         React.Fragment >
     );
 }

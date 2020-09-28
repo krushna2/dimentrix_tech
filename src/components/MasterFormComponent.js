@@ -33,7 +33,7 @@ class MasterForm extends Component {
 
     _next() {
         let currentStep = this.state.currentStep
-           
+
         currentStep = currentStep >= 2 ? 3 : currentStep + 1
         this.setState({
             currentStep: currentStep
@@ -42,7 +42,7 @@ class MasterForm extends Component {
 
     _prev() {
         let currentStep = this.state.currentStep
-       
+
         currentStep = currentStep <= 1 ? 1 : currentStep - 1
         this.setState({
             currentStep: currentStep
@@ -65,80 +65,85 @@ class MasterForm extends Component {
 
 
     handleSubmit = (event) => {
-            event.preventDefault()
-            const score = this.state.totalScore
-            const percentage=parseInt((score/120)*100)
-            if (percentage <= 33) {
-                alert("Your Assessment Score  is Bad")
-            } else if (percentage <= 66) {
-                alert("Your Assessment Score is good")
-            } else if (percentage > 66) {
-                alert("Your Assessment Score  is Excellent")
-            }
-
-
+        event.preventDefault()
+        const score = this.state.totalScore
+        const percentage = parseInt((score / 120) * 100)
+        if (percentage <= 33) {
+            alert("Your Assessment Score  is Bad")
+        } else if (percentage <= 66) {
+            alert("Your Assessment Score is good")
+        } else if (percentage > 66) {
+            alert("Your Assessment Score  is Excellent")
         }
-   
+
+
+    }
+
     get previousButton() {
         let currentStep = this.state.currentStep;
-      
+
         if (currentStep !== 1) {
-            return ( 
-                <button className = "btn btn-secondary"
+            return ( <
+                button className = "btn btn-success"
                 type = "button"
                 onClick = { this._prev } >
-                Previous 
-                </button>
+                Previous <
+                /button>
             )
         }
-      
+
         return null;
     }
 
     get nextButton() {
         let currentStep = this.state.currentStep;
-        
+
         if (currentStep < 3) {
-            return ( 
-                <button className = "btn btn-primary float-right"
+            return ( <
+                button className = "btn btn-success float-right"
                 type = "button"
                 onClick = { this._next } >
-                Next 
-                </button>        
+                Next <
+                /button>        
             )
         }
-      
+
         return null;
     }
 
     render() {
-        return (
-             <React.Fragment >
-            <Header score = { this.state.totalScore }/> 
-                <div className = "container" >
-                    <Form onSubmit = { this.handleSubmit } >
+        return ( <
+            React.Fragment >
+            <
+            Header score = { this.state.totalScore }
+            />  <
+            div className = "container" >
+            <
+            Form onSubmit = { this.handleSubmit } >
 
 
-                        <Step1 currentStep = { this.state.currentStep }
-                        handleChange = { this.handleChange }
-                        score = { this.state }
-                        /> 
-                        <Step2 currentStep = { this.state.currentStep }
-                        handleChange = { this.handleChange }
-                        score = { this.state }
-                        /> 
-                        <Step3 currentStep = { this.state.currentStep }
-                        handleChange = { this.handleChange }
-                        score = { this.state }
-                        />
-                        < div className = "bottum p-2" > 
-                            { this.previousButton } { this.nextButton } 
-                        </div>     
+            <
+            Step1 currentStep = { this.state.currentStep }
+            handleChange = { this.handleChange }
+            score = { this.state }
+            />  <
+            Step2 currentStep = { this.state.currentStep }
+            handleChange = { this.handleChange }
+            score = { this.state }
+            />  <
+            Step3 currentStep = { this.state.currentStep }
+            handleChange = { this.handleChange }
+            score = { this.state }
+            /> <
+            div className = "bottum p-2" > { this.previousButton } { this.nextButton } <
+            /div>     
 
-                    </Form>
-                </div>
+            <
+            /Form> < /
+            div >
 
-            </React.Fragment>
+            <
+            /React.Fragment>
         )
     }
 }

@@ -20,7 +20,7 @@ function Header(props) {
         <
         div className = "fluid-container mb-4 " >
         <
-        Nav dark className = "text-light bg-info p-4" >
+        Nav dark className = "text-light bg-secondary p-4" >
         <
         div > Assessment Progress: { percentage } % < /div>        <
         Progress bar animated color = { colour(percentage) }
