@@ -5,13 +5,11 @@ function Step2(props) {
     if (props.currentStep !== 2) {
         return null
     }
-    return ( <
-        >
-        <
-        FormGroup >
-        <
-        Label htmlFor = "sixth" > Are you good in outdoor games ? < /Label> <
-        Input className = "form-control slider"
+    return (
+      <>
+        <FormGroup>
+        <Label htmlFor = "sixth" > Are you good in outdoor games ? </Label> 
+        <Input className = "form-control slider"
         step = { 1 }
         min = { 0 }
         max = { 10 }
@@ -21,12 +19,11 @@ function Step2(props) {
         type = "range"
         value = { props.score.sixth }
         onChange = { props.handleChange }
-        /> <
-        /FormGroup> <
-        FormGroup >
-        <
-        Label htmlFor = "seventh" > Are you good reader ? < /Label> <
-        Input className = "form-control slider"
+        /> 
+        </FormGroup> 
+        <FormGroup >
+        <Label htmlFor = "seventh" > Are you good reader ? </Label>
+         <Input className = "form-control slider"
         step = { 1 }
         min = { 0 }
         max = { 10 }
@@ -36,12 +33,11 @@ function Step2(props) {
         type = "range"
         value = { props.score.seventh }
         onChange = { props.handleChange }
-        /> <
-        /FormGroup> <
-        FormGroup >
-        <
-        Label htmlFor = "eighth" > How you behave with your friends or teammates ? < /Label> <
-        Input className = "form-control slider"
+        />
+        </FormGroup>
+        <FormGroup>
+        <Label htmlFor = "eighth" > How you behave with your friends or teammates ? </Label> 
+        <Input className = "form-control slider"
         step = { 1 }
         min = { 0 }
         max = { 10 }
@@ -51,12 +47,11 @@ function Step2(props) {
         type = "range"
         value = { props.score.eighth }
         onChange = { props.handleChange }
-        /> <
-        /FormGroup> <
-        FormGroup >
-        <
-        Label htmlFor = "nineth" > Are you good in playing cricket ? < /Label> <
-        Input className = "form-control slider"
+        /> 
+        </FormGroup> 
+        <FormGroup >
+        <Label htmlFor = "nineth" > Are you good in playing cricket ? </Label> 
+        <Input className = "form-control slider"
         step = { 1 }
         min = { 0 }
         max = { 10 }
@@ -66,12 +61,11 @@ function Step2(props) {
         type = "range"
         value = { props.score.nineth }
         onChange = { props.handleChange }
-        /> <
-        /FormGroup> <
-        FormGroup >
-        <
-        Label htmlFor = "tenth" > Are you good in playing video game ? < /Label> <
-        Input className = "form-control slider"
+        /> 
+        </FormGroup> 
+        <FormGroup >
+        <Label htmlFor = "tenth" > Are you good in playing video game ? </Label> 
+        <Input className = "form-control slider"
         step = { 1 }
         min = { 0 }
         max = { 10 }
@@ -81,13 +75,9 @@ function Step2(props) {
         type = "range"
         value = { props.score.tenth }
         onChange = { props.handleChange }
-        /> <
-        /FormGroup>
-
-
-
-        <
         />
+        </FormGroup>
+        </>
     );
 }
 
