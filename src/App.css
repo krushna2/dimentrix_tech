@@ -1,0 +1,9 @@
+Form{
+    width: 70%;
+    margin: auto;
+}
+
+Form .But{
+    width: 20%;
+    margin-left: 40%;
+}
